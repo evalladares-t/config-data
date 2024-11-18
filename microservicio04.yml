@@ -1,6 +1,12 @@
+
+application:
+  endpoints:
+    url: http://localhost:8082/api/
+
 server:
   port: 8084
 spring:
+  timezone: America/Lima
   data:
     mongodb:
       uri: mongodb+srv://nttdatauser:s2D4xMuLPx5zMj0f@dbbootcamp57.0qsps.mongodb.net/?retryWrites=true&w=majority&appName=dbbootcamp57
