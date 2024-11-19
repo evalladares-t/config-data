@@ -1,3 +1,11 @@
+
+application:
+  endpoints:
+    url:
+      account: http://localhost:8082/api/
+      credit: http://localhost:8083/api/
+
+
 server:
   port: 8081
 spring:
