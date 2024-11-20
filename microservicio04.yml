@@ -1,7 +1,9 @@
 
 application:
   endpoints:
-    url: http://localhost:8082/api/
+    url:
+      account: http://localhost:8082/api/
+      credit: http://localhost:8083/api/
 
 server:
   port: 8084
