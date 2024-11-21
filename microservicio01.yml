@@ -11,8 +11,6 @@ spring:
     mongodb:
       uri: mongodb+srv://nttdatauser:s2D4xMuLPx5zMj0f@dbbootcamp57.0qsps.mongodb.net/?retryWrites=true&w=majority&appName=dbbootcamp57
       database: Bootcamp57
-  application:
-    name: microservicio01
 
 eureka:
   client:
