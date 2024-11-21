@@ -1,11 +1,4 @@
 
-eureka:
-  instance:
-    hostname: localhost
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
-    prefer-ip-address: true
-
 server:
   port: 8082
 spring:
