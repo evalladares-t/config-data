@@ -1,4 +1,8 @@
 
+application:
+  endpoints:
+    url: http://localhost:8081/api/
+
 server:
   port: 8083
 spring:
@@ -8,3 +12,8 @@ spring:
       database: Bootcamp57
   application:
     name: microservicio03
+
+eureka:
+  serviceUrl:
+    defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  prefer-ip-address: true

@@ -11,3 +11,8 @@ spring:
       database: Bootcamp57
   application:
     name: microservicio02
+
+eureka:
+  serviceUrl:
+    defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  prefer-ip-address: true
