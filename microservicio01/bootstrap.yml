@@ -7,10 +7,6 @@ application:
 server:
   port: 8081
 spring:
-  cloud:
-    config:
-      username: root
-      password: pr0y3ct1
   data:
     mongodb:
       uri: mongodb+srv://nttdatauser:s2D4xMuLPx5zMj0f@dbbootcamp57.0qsps.mongodb.net/?retryWrites=true&w=majority&appName=dbbootcamp57
