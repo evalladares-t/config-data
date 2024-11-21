@@ -1,4 +1,7 @@
 
+application:
+  endpoints:
+    url: http://localhost:8081/api/
 server:
   port: 8082
 spring:
