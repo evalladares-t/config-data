@@ -3,6 +3,7 @@ application:
   endpoints:
     url:
       customer: http://localhost:8081/api/
+      credit: http://localhost:8083/api/
       transaction: http://localhost:8084/api/
 server:
   port: 8082
