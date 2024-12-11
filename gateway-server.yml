@@ -26,3 +26,7 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/api/v1/transacctions/**
+        - id: microservicio05
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/v1/wallets/**
