@@ -16,6 +16,19 @@ spring:
   application:
     name: microservicio04
 
+resilience4j:
+  circuitbreaker:
+    instances:
+      transactionService:
+        slidingWindowSize: 10           # Tamaño de la ventana deslizante en términos de número de llamadas
+        slidingWindowType: COUNT_BASED # Configuración basada en conteo
+        failureRateThreshold: 50       # Porcentaje de fallos que abrirá el CircuitBreaker
+        permittedNumberOfCallsInHalfOpenState: 5 # Número de llamadas permitidas en estado half-open
+        waitDurationInOpenState: 10s   # Tiempo que permanecerá en estado abierto antes de probar estado half-open
+        minimumNumberOfCalls: 5        # Número mínimo de llamadas necesarias para evaluar el estado
+        slowCallRateThreshold: 50        # Porcentaje de llamadas lentas que abrirán el CircuitBreaker
+        slowCallDurationThreshold: 2s    # Umbral para considerar una llamada como lenta (en este caso 2 segundos)
+
 eureka:
   client:
     serviceUrl:

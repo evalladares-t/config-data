@@ -1,0 +1,25 @@
+
+application:
+  endpoints:
+    url:
+      customer: http://localhost:8081/api/
+      account: http://localhost:8082/api/
+      transaction: http://localhost:8084/api/
+
+
+server:
+  port: 8085
+spring:
+  timezone: America/Lima
+  data:
+    mongodb:
+      uri: mongodb+srv://nttdatauser:s2D4xMuLPx5zMj0f@dbbootcamp57.0qsps.mongodb.net/?retryWrites=true&w=majority&appName=dbbootcamp57
+      database: Bootcamp57
+  application:
+    name: microservicio05
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+    prefer-ip-address: true
